@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.App::before {
+  content: "";
+  background: url("./Assets/rest-sunshine-atoll-bungalow-holiday.jpg") no-repeat
+    center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.search-bar {
+  padding: 2rem;
+}
+
+.search-bar form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar form input {
+  padding: 0.7rem 1.5rem;
+  border-radius: 0 4px 4px 0;
+  border: 2px solid #0078d7;
+  outline: none;
+}
+.left {
+  padding: 0 35px;
+}
+.left .cloud {
+  display: flex;
+  flex-direction: column;
+}
+
+.left .cloud .icon {
+  width: 50px;
+}
+
+.left .cloud h1 {
+  font-size: 35px;
+}
+
+.left .city-name {
+  padding-bottom: 12px;
+  font-size: 20px;
+}
+
+.left .temperature {
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  padding: 0 35px;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.humidity .humid-icons {
+  padding-bottom: 24px;
+}
+
+.humidity .humid {
+  padding: 10px 0;
+}
+
+.humidity .humid p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.humidity .humid h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.humidity .humid-icons {
+  padding-right: 0.7rem;
+}
+
+.pressure {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.pressure .press-icons {
+  padding-bottom: 24px;
+}
+
+.pressure .press {
+  padding: 10px 0;
+}
+
+.pressure .press p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.pressure .press h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pressure .press-icons {
+  padding-right: 0.7rem;
+}
+
+.rain {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.rain .rainy-icons {
+  padding-bottom: 24px;
+}
+
+.rain .rainy {
+  padding: 10px 0;
+}
+
+.rain .rainy p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.rain .rainy h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.rain .rainy-icons {
+  padding-right: 0.7rem;
+}
+
+/* wind */
+
+.wind {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.wind .windy {
+  padding: 10px 0;
+}
+
+.wind .windy-icons {
+  padding-bottom: 24px;
+}
+
+.wind .windy p {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.wind .windy h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.wind .windy-icons {
+  padding-right: 0.7rem;
+}
