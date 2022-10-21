@@ -54,7 +54,7 @@ function App() {
       <div className="container">
         {location !== "undefined" ? (
           <Fragment>
-            {list !== "undefinded" ? (
+            {list !== "undefined" ? (
               <Fragment>
                 <div className="left">
                   <div className="cloud">
@@ -68,7 +68,7 @@ function App() {
 
                   <div className="city-name">
                     <p>
-                      {location.name}, {location.country}
+                      {location.name} {location.country}
                     </p>
                   </div>
 
@@ -107,7 +107,7 @@ function App() {
 
                     <div className="rainy">
                       <p>Chance of Rain</p>
-                      <h4>{list[0].pop}mm</h4>
+                      <h4>{list[0].pop} mm</h4>
                     </div>
                   </div>
 
@@ -118,7 +118,7 @@ function App() {
 
                     <div className="windy">
                       <p>Wind Speed</p>
-                      <h4>{list[0].wind.speed}m/s</h4>
+                      <h4>{list[0].wind.speed} m/s</h4>
                     </div>
                   </div>
                 </div>
